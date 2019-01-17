@@ -1,0 +1,16 @@
+@media only screen and (max-width: 1140px) {
+    
+}
+@media only screen and (max-width: 960px) {
+    header .navbar-nav{
+        background-color: #4532ff;
+    }
+}
+@media only screen and (max-width: 720px) {
+        
+}
+@media only screen and (max-width: 540px) {
+    h1{
+        font-size: 40px;
+    }
+}
