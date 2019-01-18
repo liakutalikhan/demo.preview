@@ -58,6 +58,16 @@ header .navbar .nav-link{
     padding: 5px 20px !important;
     display: block;
     color: #fff !important;
+    font-weight: bold;
+}
+header .navbar .active .nav-link{
+    color: #FBBE5A !important;
+}
+header .navbar .nav-item:hover .nav-link{
+    color: #FBBE5A !important;
+}
+header .navbar .search .nav-item:hover .nav-link i{
+    color: #FBBE5A !important;
 }
 header .navbar .nav-item:last-child .nav-link{
     padding-right: 0 !important;
@@ -109,24 +119,47 @@ section.about .content .button{
     background: #e81840;
 }
 
+.content .button a:hover{
+    background: red;
+    padding: 10px 20px 9px 3px;
+    border-radius: 30px;
+    transition: .3s;
+}
+.content .button a:hover i{
+    background: #fff;
+    color: red;
+}
+
 section.solution,section.smart-energy,section.smart-warehouse,section.contact{
     background: linear-gradient(to bottom, #971f91, #f11836);
     position: relative;
 }
 section.solution img{
     width: 100%;
+    position: relative;
+    z-index: 1;
 }
-section.solution .content{
+section.smart-energy .content{
+    position: relative;
+    z-index: 111;
+}
+section.solution .content
+{
     float: right;
     width: 40%;
     margin-top: 50px;
-    padding-right: 5%
+    padding-right: 5%;
+    position: relative;
+    z-index: 111;
 }
 section.solution .content h2{
     position: absolute;
     right: 0;
     padding-right: 100px;
     top: -60px
+}
+section.solution .content h4{
+    margin-top: 30px;
 }
 section.solution .left-image img{
     margin-top: -130px;
@@ -135,7 +168,9 @@ section.solution .left-image img{
     color: #000 !important;
 }
 
-
+.white a:hover{
+    color: #fff !important;
+}
 .smart-building img, .smart-agriculture img{
     width: 100%;
 }
@@ -397,6 +432,10 @@ footer form .btn{
     color: #fff;
     font-weight: bold;
 }
+footer form .btn:hover{
+    background: #EC183B;
+    color: #00134b;
+}
 .social{
     padding-left: 30px;
     display: flex;
@@ -407,7 +446,9 @@ footer form .btn{
     color: #909090 !important;
     font-size: 35px;
 }
-
+.social a:hover i{
+    color: #EC183B !important;
+}
 .footer-middle{
     padding: 30px 5%;
     border-bottom: 1px solid #d6d6d6;
