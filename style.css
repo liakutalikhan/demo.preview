@@ -78,7 +78,7 @@ header .navbar-dark .navbar-toggler {
     width: 100%
 }
 section.about{
-    background: linear-gradient(to bottom, #fbbb5a, #ee654f)
+    background: linear-gradient(to bottom, #fbba59, #ee654f)
 }
 section.about .content h2{
     margin-top: 30px;
@@ -141,11 +141,11 @@ section.solution .left-image img{
 }
 
 section.smart-agriculture,section.smart-airport{
-    background: linear-gradient(to bottom, #4c31ff, #5031ff);
+    background: linear-gradient(to bottom, #4832ff, #5031ff);
     
 }
 section.smart-government,section.smart-school,section.product{
-    background: linear-gradient(to bottom, #ee624f, #fcc25a);
+    background: linear-gradient(to bottom, #ef694f, #fcc25a);
 }
 
 section.smart-energy .content{
@@ -160,7 +160,7 @@ section.smart-energy .left-image img{
 
 
 section.services{
-    background: linear-gradient(to bottom, #0f343d, #071021);
+    background: linear-gradient(to bottom, #0e313b, #071021);
 }
 .title{
     display: flex;
