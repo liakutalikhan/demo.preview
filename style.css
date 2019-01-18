@@ -198,6 +198,7 @@ section.services{
     background: linear-gradient(to bottom, #0e313b, #071021);
 }
 .title{
+    padding-top: 5px;
     display: flex;
     justify-content: center;
 }
