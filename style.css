@@ -165,7 +165,7 @@ header .imgGrafic .agriculture{
 }
  header .imgGrafic .education{
     top: 8.1%;
-    left: 12.1%;
+    left: 11.4%;
     animation: ani2 1s backwards;
     animation-delay: 1s;
 }
@@ -174,7 +174,7 @@ header .imgGrafic .agriculture{
 }
 header .imgGrafic .building{
     top: 17%;
-    left: 24.6%;
+    left: 24.4%;
     animation: ani3 1s backwards;
     animation-delay: 1s;
 }
@@ -295,13 +295,15 @@ section.about .content .button{
 }
 .content .button a::before{
     content: '';
-    width: 0%;
+    width: 40px;
     height: 100%;
     background: red;
     position: absolute;
     z-index: -1;
     top: 0;
+    border-radius: 30px;
     transition: .5s;
+    opacity: 0;
 }
 
 
@@ -335,7 +337,8 @@ section.about .content .button{
 }
 .content .button a:hover::before{
     width: 100%;
-    border-radius: 30px;
+    display: block;
+    opacity: 1;
     transition: .7s;
 }
 
