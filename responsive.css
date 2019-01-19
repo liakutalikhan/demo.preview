@@ -24,6 +24,10 @@
         text-align: center;
         margin-bottom: 50px;
     }
+    header .imgGrafic span{
+        line-height: 1.6vw;
+        font-size: 1.6vw;
+    }
     section.about .content,
     section.about .content p{
         text-align: center;
@@ -33,7 +37,7 @@
     }
        
     section.solution .content h2{
-        right: -6%;
+        right: -5%;
         top: -40px
     }
     section.solution .content,
