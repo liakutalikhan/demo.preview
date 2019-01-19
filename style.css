@@ -1,7 +1,10 @@
 @font-face {
-    font-family: century-gothic;
-    src: url(assets/fonts/century-gothic/GOTHICB.TTF);
     src: url(assets/fonts/century-gothic/Century%20Gothic.ttf);
+    font-family: century-gothic;
+}
+@font-face {
+    src: url(assets/fonts/century-gothic/GOTHICB.TTF);
+    font-family: century-gothic-b;
 }
 *{
     font-family: century-gothic;
@@ -11,6 +14,7 @@
 h1{
     font-size: 55px;
     font-weight: bold;
+    font-family: century-gothic-b;
 }
 h2{
     font-size: 40px;
@@ -19,17 +23,24 @@ h2{
     padding: 15px 40px 15px 15px;
     background-image: url(assets/image/h2bg.png);
     margin-bottom: 20px;
+    font-family: century-gothic-b;
+}
+h3,h6{
+    font-family: century-gothic-b;
 }
 h4{
     font-size: 30px;
+    margin-bottom: 20px;
+    font-family: century-gothic-b;
 }
 h5{
     font-size: 28px;
     font-weight: bold;
+    font-family: century-gothic-b;
 }
 p{
     font-size: 14px;
-    text-align: justify
+    text-align: left;
 }
 a:hover{
     text-decoration: none;
@@ -59,6 +70,7 @@ header .navbar .nav-link{
     display: block;
     color: #fff !important;
     font-weight: bold;
+    text-align: right;
 }
 header .navbar .active .nav-link{
     color: #FBBE5A !important;
@@ -69,13 +81,32 @@ header .navbar .nav-item:hover .nav-link{
 header .navbar .search .nav-item:hover .nav-link i{
     color: #FBBE5A !important;
 }
-header .navbar .nav-item:last-child .nav-link{
+header .navbar .nav .nav-item:nth-child(2) .nav-link{
     padding-right: 0 !important;
     border-left: 1px solid #695cff;
 }
+header .navbar .nav .nav-item:last-child{
+    display: none;
+}
+header .navbar .nav .nav-item:last-child i{
+    position: relative;
+}
+header .navbar .nav .nav-item:last-child i span{
+    position: absolute;
+    right: -7px;
+    top: -8px;
+    font-size: 10px;
+    background: #d95757;
+    height: 15px;
+    line-height: 15px;
+    width: 15px;
+    text-align: center;
+    border-radius: 50%
+}
 header .navbar-dark .navbar-toggler {
     color: rgba(255,255,255,1);
-    border-color: rgba(255,255,255,.9);
+    border:none;
+    font-size: 28px;
 }
 .px{
     padding: 0 5%;
@@ -92,6 +123,9 @@ section.about{
 }
 section.about .content h2{
     margin-top: 30px;
+}
+section.about .content p{
+    text-align: justify;
 }
 section.about .content .button{
     margin-top: 35px
@@ -121,18 +155,23 @@ section.about .content .button{
 
 .content .button a:hover{
     background: red;
-    padding: 10px 20px 9px 3px;
+    padding: 10px 20px 9px 0px;
     border-radius: 30px;
     transition: .3s;
 }
 .content .button a:hover i{
     background: #fff;
     color: red;
+    margin-left: 2px;
+    transition: .2s
 }
 
 section.solution,section.smart-energy,section.smart-warehouse,section.contact{
     background: linear-gradient(to bottom, #971f91, #f11836);
     position: relative;
+}
+section.solution{
+    overflow: hidden;
 }
 section.solution img{
     width: 100%;
@@ -203,13 +242,17 @@ section.services{
     justify-content: center;
 }
 .title h2{
-    display:block;
+    display:inline-block;
     padding: 15px 30px;
 }
-section.services .row img{
+section.services .services-slide img{
     width: 120px;
     margin: 20px auto;
     display: block;
+}
+section.services .services-slide p{
+    max-width: 250px;
+    margin: auto;
 }
 section.services h6{
     text-align: center;
@@ -219,6 +262,7 @@ section.services p{
     color: #c7d0d5;
 }
 section.services .btn{
+    margin-top: 20px;
     padding: 8px 40px;
     border-radius: 70px;
     border: 2px solid #112536;
@@ -326,6 +370,8 @@ section.contact h2{
 }
 .contact h6{
     font-size: 22px;
+    margin-top: 20px;
+    font-family: century-gothic;
 }
 section.contact form{
     padding: 20px
@@ -333,7 +379,7 @@ section.contact form{
 section.contact form input,
 section.contact form select,
 section.contact form textarea{
-    padding: 20px 30px;
+    padding: 15px 30px;
     background-color: transparent;
     border: 2px solid #941367;
     border-radius: 100px;
@@ -375,7 +421,12 @@ section.contact .btn:hover{
     background: #fff;
     color: #00134b;
 }
+/*
 section.contact .content{
+    padding: 40px;
+}
+*/
+section.contact .content {
     background-image: url(assets/image/shado.png);
     padding: 40px;
     background-size: 100% 100%
@@ -407,23 +458,22 @@ footer h5{
     position: relative;
 }
 footer h6{
-    color: #000;
+    color: #535353;
     text-align: center;
 }
-footer .subscrib{
-    padding: 10px 5%;
-    border-bottom: 1px solid #d6d6d6;
+footer .col-12 h6{
+    font-family: century-gothic;
 }
 footer form{
-    width: 80%;
+    width: 100%;
 }
 footer form input{
-    padding: 22px !important;
+    padding: 20px !important;
     border-color: #818181;
 }
 footer form .btn{
     width: 25%;
-    padding: 10px;
+    padding: 8px;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     border-top-left-radius: 0px;
@@ -436,12 +486,6 @@ footer form .btn:hover{
     background: #EC183B;
     color: #00134b;
 }
-.social{
-    padding-left: 30px;
-    display: flex;
-    justify-content: space-between;
-    width: 18%
-}
 .social a i{
     color: #909090 !important;
     font-size: 35px;
@@ -449,40 +493,52 @@ footer form .btn:hover{
 .social a:hover i{
     color: #EC183B !important;
 }
-.footer-middle{
-    padding: 30px 5%;
-    border-bottom: 1px solid #d6d6d6;
+
+footer .subscrib{
+    border-bottom:  1px solid #d6d6d6;
 }
-.footer-middle p{
-    color: #000;
+footer p{
+    color: #535353;
     text-align: left;
 }
-.footer-middle img{
+footer .logo2{
     height: 80px;
     width: auto;
 }
 .footer-middle .content-link h6{
     margin-bottom: 20px;
 }
-.footer-middle .content-link a{
+footer .content-link a{
     color:#000;
     font-size: 14px;
     padding: 3px 0;
     display: block;
 }
-.footer-middle .contactus .d-flex .img{
-    width: 50px;
-    height: 50px;
-    display: flex;    
+footer .contactus .d-flex i{
+    color: #000;
+    margin-top: 4px
 }
-.footer-middle .contactus .d-flex img {
-    width: 20px;
-    height: 25px;
+footer .contactus .d-flex p{
+    margin-left: 20px;
 }
+footer .contactus .conSocial{
+    padding: 0;
+}
+footer .contactus .conSocial a i{
+    font-size: 22px !important;
+    color: #000;
+    margin-right: 15px
+}
+footer .contactus .conSocial a i:hover{
+    color: #EC183B;
+}
+
 .footer-bottom p{
+    border-top: 1px solid #d6d6d6;
     color: #000;
     text-align: center;
-    margin: 0;padding: 15px
+    margin: 0;padding: 15px;
+    margin-top: 20px;
 }
 
 

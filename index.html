@@ -4,12 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <!-- Font Aawesome-->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--   Fabicon   -->
     <link rel="icon" href="fabicon.png" sizes="16x16" type="image/png">
     <title>TST</title>
+    <!-- Font Aawesome-->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
@@ -19,12 +22,22 @@
 
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark px-3 px-md-5 ">
-            <a class="navbar-brand" href="#"><img src="assets/image/logo.png" alt=""></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand order-1" href="#"><img src="assets/image/logo.png" alt=""></a>
+            <ul class="nav ml-auto search order-2 order-lg-4">
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-shopping-cart"><span>0</span></i></a>
+                </li>
+            </ul>
+            <button class="navbar-toggler order-2 order-lg-3" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
             </button>
-
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="collapse navbar-collapse order-3" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -41,14 +54,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
-                    <ul class="nav search">
-                        <li class="nav-item ">
-                            <a class="nav-link" href="#"><i class="fas fa-search"></i></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-user"></i></a>
-                        </li>
-                    </ul>
                 </ul>
             </div>
         </nav>
@@ -57,8 +62,8 @@
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
                     <div class="content">
-                        <h1 class="animated fadeInLeft">EMPOWERING</h1>
-                        <h4 class="animated zoomIn">One city at at time</h4>
+                        <h1 class="animated slideInUp">EMPOWERING</h1>
+                        <h4 class="animated slideInUp">One city at at time</h4>
                         <p class="animated slideInUp">As the Gulf Region continues to urbanize, TST thrives to make significant contribution to this vision of creating more sustainable communities by devising Smart City solutions.</p>
                     </div>
                 </div>
@@ -70,19 +75,21 @@
         <img class="separator" src="assets/image/bg/orang.png" alt="">
     </header>
     <section class="about">
-        <div class="px pt-5 d-flex align-items-center">
+        <div class="px pt-4 d-flex align-items-center">
             <div class="row">
-                <div class="col-md-6 wow bounceInLeft">
+                <div class="col-md-6 wow bounceInLeft order-2 order-md-1">
                     <img src="assets/image/aboutus.png" alt="">
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-6 order-md-2">
                     <div class="content">
                         <h2 class="wow lightSpeedIn">ABOUT US</h2>
-                        <p class="wow slideInUp">Our mission is to empower each and every city in this world to achieve more. We want to connect people and information in platforms that will help in getting important things done while focusing on creating better communities.
+                        <div  class="wow slideInUp">
+                        <p>Our mission is to empower each and every city in this world to achieve more. We want to connect people and information in platforms that will help in getting important things done while focusing on creating better communities.
                             <br><br>
                             More than technological transformations, we aim to build smart and engaged cities where life is easy and has a promise of a vibrant future.</p>
-                        <div class="button wow slideInUp">
+                        <div class="button">
                             <a href="#"><i class="fas fa-ellipsis-h"></i>Learn More</a>
+                        </div>
                         </div>
                     </div>
                 </div>
@@ -94,15 +101,16 @@
 
 
 
-
-    <section class="solution">
+    <section class="solution pt">
         <div class="px">
             <div class="content">
                 <h2 class="wow lightSpeedIn">SOLUTIONS</h2>
-                <h4 class=" wow slideInRight">Smart Industry</h4>
-                <p class=" wow slideInRight">We offer digitization in the manufacturing industry where the physical and virtual world of the value chain production is merged into a fully integrated system of data, services and Internet of Things.</p>
-                <div class="button wow slideInRight">
+                <div class="wow slideInRight">
+                <h4>Smart Industry</h4>
+                <p>We offer digitization in the manufacturing industry where the physical and virtual world of the value chain production is merged into a fully integrated system of data, services and Internet of Things.</p>
+                <div class="button">
                     <a href="#"><i class="fas fa-ellipsis-h yellow"></i>Learn More</a>
+                </div>
                 </div>
             </div>
             <div class="left-image wow bounceIn">
@@ -115,7 +123,7 @@
 
 
 
-    <section class="smart-building white">
+    <section class="smart-building white pt">
         <div class=" px">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
@@ -139,13 +147,13 @@
 
 
 
-    <section class="smart-agriculture">
+    <section class="smart-agriculture pt">
         <div class=" px">
             <div class="row">
-                <div class="col-md-7 wow bounceInLeft">
+                <div class="col-md-7 wow bounceInLeft order-2 order-md-1">
                     <img src="assets/image/smartagriculture.png" alt="">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-2">
                     <div class="content pt-5 wow slideInRight">
                         <h4>Smart Agriculture</h4>
                         <p>TST offers smart agriculture with high technology system for growing food that is sustainable for all. We employ an IoT-based system for monitoring crops using sensors for light, temperature, humidity, soil’s pH level and many more.</p>
@@ -160,11 +168,11 @@
     </section>
 
 
-    <section class="smart-government">
+    <section class="smart-government pt">
         <div class=" px">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
-                    <div class="content pt-5 wow slideInLeft">
+                    <div class="content wow slideInLeft">
                         <h4>Smart Government</h4>
                         <p>We help government entities reimagine their ecosystem by understanding their current status and assisting them in defining where they want to be in the future.</p>
                         <div class="button">
@@ -183,7 +191,7 @@
 
 
 
-    <section class="smart-energy">
+    <section class="smart-energy pt">
         <div class="px">
             <div class="content wow slideInRight">
                 <h4>Smart Energy</h4>
@@ -203,7 +211,7 @@
 
 
 
-    <section class="smart-roads white">
+    <section class="smart-roads white pt">
         <div class=" px">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
@@ -230,13 +238,13 @@
 
 
 
-    <section class="smart-airport">
+    <section class="smart-airport pt">
         <div class=" px">
             <div class="row">
-                <div class="col-md-7 wow bounceInLeft">
+                <div class="col-md-7 wow bounceInLeft order-2 order-md-1">
                     <img src="assets/image/SmartAirport.png" alt="">
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 order-md-2">
                     <div class="content pt-5 wow slideInRight">
                         <h4>Smart Airport</h4>
                         <p>We aim to provide security and savings both to passengers and airlines by managing quick departures and arrivals at airports, minimizing delays and missed flights. </p>
@@ -251,11 +259,11 @@
     </section>
 
 
-    <section class="smart-school">
+    <section class="smart-school pt">
         <div class=" px">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
-                    <div class="content pt-5 wow slideInLeft">
+                    <div class="content wow slideInLeft">
                         <h4>Smart School</h4>
                         <p>With TST smart school solutions, we ensure that we have connected and secured city dwellers that have higher literacy level by leveraging the use of automation and technology like intelligent devices, sensors, big data and cloud in the school setting. </p>
                         <div class="button">
@@ -263,7 +271,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-7 wow bounceInRight">
+                <div class="col-md-7 pt-5 wow bounceInRight">
                     <img src="assets/image/SmartSchools.png" alt="">
                 </div>
             </div>
@@ -273,14 +281,14 @@
 
 
 
-    <section class="smart-warehouse">
+    <section class="smart-warehouse pt">
         <div class=" px">
             <div class="row">
-                <div class="col-md-7 wow bounceInLeft">
+                <div class="col-md-7 wow bounceInLeft order-2 order-md-1">
                     <img src="assets/image/SmartWarehouse.png" alt="">
                 </div>
-                <div class="col-md-5">
-                    <div class="content pt-5 wow slideInRight">
+                <div class="col-md-5 order-md-2">
+                    <div class="content wow slideInRight">
                         <h4>Smart Warehouse</h4>
                         <p>Warehouses nowadays need to function smarter by operating efficiently, adhering to standards and reducing errors. With TST's networked devices and smart technology, warehouses now can drive performance, productivity and convenience in all facets of its operations.</p>
                         <div class="button">
@@ -297,7 +305,7 @@
 
 
 
-    <section class="smart-ports white">
+    <section class="smart-ports white pt">
         <div class=" px">
             <div class="row d-flex align-items-center">
                 <div class="col-md-5">
@@ -320,33 +328,40 @@
 
 
 
-    <section class="services">
+    <section class="services pt">
         <div class="px">
             <div class="title  wow zoomIn">
                 <h2>SERVICES</h2>
             </div>
-            <div class="row">
-                <div class="col-md-3 col-sm-6 mb-4 wow slideInLeft">
+            
+            
+        <div class="container">
+            <div class="owl-carousel owl-theme services-slide">
+                <div class="item">
                     <img src="assets/image/services1.png" alt="">
                     <h6>Consultation</h6>
                     <p>Plan your Smart City solution that is customized to your business requirements</p>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4 wow slideInUp">
+                <div class="item">
                     <img src="assets/image/services2.png" alt="">
                     <h6>Implementation</h6>
                     <p>Implement your Smart City solutions with secure network systems</p>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4 wow slideInUp">
+                <div class="item">
                     <img src="assets/image/services3.png" alt="">
                     <h6>Support</h6>
                     <p>Dedicated customer service support to realize the value of Smart City solutions</p>
                 </div>
-                <div class="col-md-3 col-sm-6 mb-4 wow slideInRight">
+                <div class="item">
                     <img src="assets/image/services4.png" alt="">
                     <h6>Training</h6>
                     <p>Gain the skills and knowledge for a successful digital transformation</p>
                 </div>
             </div>
+        </div>
+    
+            
+            
             <div class="survices-button wow zoomIn">
                 <a class="btn" href="#">View All Services</a>
             </div>
@@ -356,13 +371,13 @@
 
 
 
-    <section class="product">
+    <section class="product pt">
         <div class="container">
-            <div class="title  wow zoomIn">
+            <div class="title mb-4 wow zoomIn">
                 <h2>Product and Devices</h2>
             </div>
             <div class="row">
-                <div class="col-md-3 col-sm-6 my-5 wow slideInLeft">
+                <div class="col-md-3 col-6 wow slideInLeft">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -372,7 +387,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInUp">
+                <div class="col-md-3 col-6 wow slideInUp">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -382,7 +397,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInUp">
+                <div class="col-md-3 col-6 wow slideInUp">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -392,7 +407,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInRight">
+                <div class="col-md-3 col-6 wow slideInRight">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -402,7 +417,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInLeft">
+                <div class="col-md-3 col-6 wow slideInLeft">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -412,7 +427,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInUp">
+                <div class="col-md-3 col-6 wow slideInUp">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -422,7 +437,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInUp">
+                <div class="col-md-3 col-6 wow slideInUp">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -432,7 +447,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6 my-5 wow slideInRight">
+                <div class="col-md-3 col-6  wow slideInRight">
                     <div class="content mx-2">
                         <img src="assets/image/laptop.png" alt="">
                         <h6>Letraset Sheeet</h6>
@@ -450,7 +465,7 @@
 
 
 
-    <section class="contact">
+    <section class="contact pt">
         <div class="wrapper px">
             <div class="title wow zoomIn">
                 <h2>WE'RE READY TO LEAD YOU INTO A SMART TRANSFORMATION!</h2>
@@ -512,76 +527,75 @@
 
     <footer>
         <div class="container">
-           <div class="wow zoomIn">
-            <h5>Newsletter</h5>
-            <h6>Please enter your name and email address</h6>
-            <div class="subscrib d-flex">
-            <form action="">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control my-2" placeholder="Name">
-                    <input type="text" class="form-control my-2" placeholder="Email">
-                    <button class="btn my-2" type="button">Button</button>
-                    </div>
-            </form>
-            <div class="social my-3">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            </div>
-            </div>
-            
-            <div class="footer-middle">
-               <div class="row">
-                <div class="col-md-4">
-                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,</p>
-                    <img src="assets/image/logocolor.png" alt="">
+            <div class="row">
+                <div class="col-12 order-3 order-md-1 mb-md-4 wow zoomIn">
+                    <h5>Newsletter</h5>
+                    <h6>Please enter your name and email address</h6>
                 </div>
-                <div class="col-md-4 d-flex justify-content-center">
-                   <div class="content-link">
-                    <h6 class="text-left">Links</h6>
-                    <ul class="style-none m-0 p-0">
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#">Solutions</a></li>
-                        <li><a href="#">Product/Devices</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                    </ul>
-                   </div>
-                </div>
-                <div class="col-md-4 contactus">
-                    <h6 class="text-left mb-4">Contact Us</h6>
-                    <div class="d-flex">
-                        <div class="img mt-2 mr-3">
-                        <img src="assets/image/location.png" alt="">
+                <div class="col-12 mb-md-4 order-4 order-md-2 wow zoomIn">
+                    <div class="subscrib row">
+                        <form class="col-lg-9" action="">
+                            <div class="input-group mb-3">
+                                <input type="text" class="form-control my-2" placeholder="Name">
+                                <input type="text" class="form-control my-2" placeholder="Email">
+                                <button class="btn my-2" type="button">Button</button>
+                            </div>
+                        </form>
+                        <div class="col-lg-3 d-none d-lg-flex social my-3 justify-content-around">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
-                        <p>variations of passages of Lorem Ipsum available, but have! </p>
-                    </div>
-                    <div class="d-flex">
-                       <div class="img">
-                           
-                        <img src="assets/image/phone.png" alt="">
-                       </div>
-                        <p>0123-456-789</p>
-                    </div>
-                    <div class="d-flex">
-                       <div class="img">
-                        <img src="assets/image/env.png" alt="">
-                       </div>
-                        <p>info@domainname.com</p>
                     </div>
                 </div>
+
+
+                <div class="col-md-4 order-5 order-md-3 text wow slideInUp">
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth,</p>
+                    <img class="logo2" src="assets/image/logocolor.png" alt="">
+                </div>
+                <div class="col-md-4 col-sm-6 col-5 d-flex justify-content-md-center order-1 order-md-4 wow slideInUp">
+                    <div class="content-link">
+                        <h6 class="text-left">Links</h6>
+                        <ul class="style-none m-0 p-0">
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Solutions</a></li>
+                            <li><a href="#">Product/Devices</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6 col-7 contactus order-2 order-md-5 wow slideInUp">
+                    <h6 class="text-left mb-4">Contact Us</h6>
+                    <div class="info">
+                       <div class="d-flex">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>variations of passages of Lorem Ipsum available, but have! </p>
+                       </div>
+                       <div class="d-flex">
+                        <i class="fas fa-phone"></i>
+                        <p>0123-456-789</p>
+                       </div>
+                       <div class="d-flex">
+                        <i class="far fa-envelope"></i>
+                        <p>info@ domainname.com</p>
+                       </div>
+                    </div>
+                    <div class="col-lg-3 d-flex conSocial d-lg-none  my-3">
+                            <a href="#"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        </div>
+                        </div>
+                </div>
             </div>
-            </div>
+        <div class="container">
             <div class="footer-bottom text-center">
                 <p>&copy;copyright 2019, TST Smart City Smart Industries. All Right Reserved</p>
             </div>
         </div>
     </footer>
-    
-    
-    
-    
-    
+
 
 
 
@@ -593,21 +607,51 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script>
-       wow = new WOW(
-                      {
-                      boxClass:     'wow',      // default
-                      animateClass: 'animated', // default
-                      offset:       150,          // default
-                      mobile:       true,       // default
-                      live:         true        // default
-                    }
-                    )
-                    wow.init();
+        $(document).ready(function(){
+
+        $('.services-slide').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplaySpeed:2000,
+            center:true,
+            responsive:{
+                0:{
+                    items:2,
+                },
+                500:{
+                    items:2,
+                    
+                },
+                800:{
+                    items:3,
+                    center:false,
+                },
+                1000:{
+                    items:4,
+                    center:false,
+                }
+            }
+        });
+
+        wow = new WOW({
+            boxClass: 'wow', // default
+            animateClass: 'animated', // default
+            offset: 150, // default
+            mobile: true, // default
+            live: true // default
+        })
+        wow.init();
+    
+    
+    });
+        
     </script>
 </body>
 </html>
