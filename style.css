@@ -54,7 +54,6 @@ img{
 
 
 
-
 header{
     background-image:url(assets/image/bannerbg.png),linear-gradient(to bottom, #4233ff, #762cff) ;
     background-size: 100% auto;
@@ -69,15 +68,30 @@ header .navbar .nav-link{
     padding: 5px 20px !important;
     display: block;
     color: #fff !important;
-    font-weight: bold;
     text-align: right;
 }
-header .navbar .active .nav-link{
+header .navbar .active .nav-link span{
     color: #FBBE5A !important;
 }
-header .navbar .nav-item:hover .nav-link{
+header .navbar .nav-item:hover .nav-link span{
     color: #FBBE5A !important;
+    position: relative;
 }
+header .navbar .navbar-collapse .nav-item .nav-link span::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translate(-50%);
+}
+header .navbar .navbar-collapse .nav-item:hover .nav-link span::after{
+    width: 100%;
+    transition: .3s;
+}
+
 header .navbar .search .nav-item:hover .nav-link i{
     color: #FBBE5A !important;
 }
