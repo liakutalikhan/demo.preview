@@ -76,6 +76,7 @@ header .navbar .active .nav-link span{
 header .navbar .nav-item:hover .nav-link span{
     color: #FBBE5A !important;
     position: relative;
+    transition: .5s;
 }
 header .navbar .navbar-collapse .nav-item .nav-link span::after{
     content: "";
@@ -158,91 +159,91 @@ header .imgGrafic .agriculture{
     top: 31.1%;
     left: 8.1%;
     animation: ani1 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani1{
-    from {opacity: 0; left: 0; top: 11%;}
+    from {opacity: 0; left: 0; top: 11%;font-size: 2vw;}
 }
  header .imgGrafic .education{
     top: 8.1%;
     left: 11.4%;
     animation: ani2 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani2{
-    from {opacity: 0; left: 19%; top: -12%;}
+    from {opacity: 0; left: 19%; top: -12%;font-size: 2vw;}
 }
 header .imgGrafic .building{
     top: 17%;
     left: 24.4%;
     animation: ani3 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani3{
-    from {opacity: 0; left: 28%; top: -5%;}
+    from {opacity: 0; left: 28%; top: -5%;font-size: 2vw;}
 }
 header .imgGrafic .airport{
     top: 2%;
     left: 36.7%;
     animation: ani4 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani4{
-    from {opacity: 0; left: 40%; top: -18%;}
+    from {opacity: 0; left: 40%; top: -18%;font-size: 2vw;}
 }
 header .imgGrafic .industry{
     top: 26.2%;
     left: 41.5%;
     animation: ani5 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani5{
-    from {opacity: 0; left: 20%; top: 46%;}
+    from {opacity: 0; left: 20%; top: 46%;font-size: 2vw;}
 }
 header .imgGrafic .goverment{
     top: 17%;
     left: 44.5%;
     animation: ani6 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani6{
-    from {opacity: 0; left: 54%; top: -3%;}
+    from {opacity: 0; left: 54%; top: -3%;font-size: 2vw;}
 }
 header .imgGrafic .ports{
     top: 1.1%;
     left: 56.8%;
     animation: ani7 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani7{
-    from {opacity: 0; left: 76%; top: -19%;}
+    from {opacity: 0; left: 76%; top: -19%;font-size: 2vw;}
 }
 header .imgGrafic .energy{
     top: 26.1%;
     left: 65%;
     animation: ani8 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani8{
-    from {opacity: 0; left: 70%; top: 6%;}
+    from {opacity: 0; left: 70%; top: 6%;font-size: 2vw;}
 }
 header .imgGrafic .warehouse{
     top: 6.7%;
     left: 72.4%;
     animation: ani9 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani9{
-    from {opacity: 0; left: 90%; top: -14%;}
+    from {opacity: 0; left: 90%; top: -14%;font-size: 2vw;}
 }
 header .imgGrafic .Transportation{
     top: 26%;
     left: 79.8%;
     animation: ani10 1s backwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 @keyframes ani10{
-    from {opacity: 0; left: 99%; top: 46%;}
+    from {opacity: 0; left: 99%; top: 46%;font-size: 2vw;}
 }
 
 
