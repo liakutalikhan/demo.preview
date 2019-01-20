@@ -51,6 +51,9 @@ a:hover{
 img{
     width: 100%;
 }
+section,footer,header{
+    overflow: hidden;
+}
 
 
 
@@ -270,6 +273,91 @@ header .imgGrafic .Transportation{
 
 
 
+.search-box{
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    background: rgba(27,1,43,.8);
+    z-index: 999999;
+    width: 100%;
+    transition: 1s;
+}
+.popover{
+    display: none;
+    width: 100vw;
+}
+
+.search-box .times{
+    width: 40px;
+    height: 40px;
+    line-height: 37.1px;
+    font-size: 25px;
+    text-align: center;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    cursor: pointer;
+        
+}
+.search-box form {
+    margin-right: 40px;
+    position: relative;
+}
+.search-box form i{
+    position: absolute;
+    font-size: 30px;
+    bottom: 20px;
+    left: 2px;
+}
+.search-box form input{
+    background-color: transparent;
+    width: 100%;
+    font-size: 30px;
+    color: #777;
+    padding: 20px 20px 10px 60px;
+    border: none;
+    border-bottom: 1px solid #999;
+    
+}
+.search-box .row{
+    position: relative;
+    width: 100%;
+}
+.search-box .row .col-6{
+    margin-top: 30px;
+}
+.search-box .row h5{
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+.search-box .row ul{
+    list-style: none;
+    padding: 0;
+}
+.search-box .row ul li{
+    margin: 10px 0;
+} 
+.search-box .row ul li a{
+    color: #fff;
+    
+}
+.search-box .row ul li a img{
+    height: 40px;
+    width: auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-sizing:content-box;
+    margin-right: 10px
+    
+}
+.search-box .row ul li a p{
+    font-size: 18px;
+}
+ 
 
 
 
@@ -281,8 +369,17 @@ header .imgGrafic .Transportation{
 
 
 
-
-
+.Shape_1_copy_4 {
+  background-image: -moz-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -webkit-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -ms-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  position: absolute;
+  left: -9px;
+  top: 9204px;
+  width: 1937px;
+  height: 1413px;
+  z-index: 119;
+}
 
 
 

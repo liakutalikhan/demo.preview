@@ -52,4 +52,14 @@ $(document).ready(function(){
         })
         wow.init();
     
+    
+    $('.s-bar').on('click',function(){
+        $('.search-box').removeClass('popover');
+    })
+    $('.search-box .times').on('click',function(){
+        $('.search-box').addClass('popover');
+    })
+    
+    
+    
     });
