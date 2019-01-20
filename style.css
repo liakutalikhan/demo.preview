@@ -123,6 +123,28 @@ header .navbar-dark .navbar-toggler {
     border:none;
     font-size: 28px;
 }
+header .navbar .nav .nav-item.s-bar{
+    position: relative;
+}
+header .navbar .nav .nav-item.s-bar:hover form{
+    height: 40px;
+    transition: 1s;
+}
+header .navbar .nav .nav-item.s-bar form{
+    height: 0;width: 0;
+    position: absolute;
+    right: 0;
+    z-index: 9999;
+    width: 200px;
+    overflow: hidden;
+}
+header .navbar .nav .nav-item.s-bar form input{
+    color: #fff;
+    background: #00134b;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    padding: 5px 10px;
+}
 .px{
     padding: 0 5%;
 }
