@@ -11,6 +11,12 @@
     color: #fff;
     box-sizing: border-box;
 }
+img{
+    display: none;
+}
+section img,header img{
+    display: block;
+}
 h1{
     font-size: 55px;
     font-weight: bold;
