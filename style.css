@@ -54,6 +54,7 @@ img{
 section,footer,header{
     overflow: hidden;
 }
+svg,svg path{width: 100%;}
 
 
 
@@ -375,11 +376,12 @@ header .imgGrafic .Transportation{
 
 
 
-
-
-
 section.about{
-    background: linear-gradient(to bottom, #fbba59, #ee654f)
+    background: linear-gradient( 90deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+        
 }
 section.about .content h2{
     margin-top: 30px;
@@ -474,8 +476,33 @@ section.about .content .button{
     transition: .7s;
 }
 
-section.solution,section.smart-energy,section.smart-warehouse,section.contact{
-    background: linear-gradient(to bottom, #971f91, #f11836);
+section.solution{
+  background-image: linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+
+}
+section.smart-energy{
+    background-image: linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+    background-image: -moz-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+    background-image: -webkit-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+    background-image: -ms-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+
+
+}
+section.smart-warehouse{
+  background-image: linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+}
+
+section.contact{
+  background-image: linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(246,23,49) 0%, rgb(140,32,156) 100%);
     position: relative;
 }
 section.solution{
@@ -522,12 +549,35 @@ section.solution .left-image img{
     width: 100%;
 }
 
-section.smart-agriculture,section.smart-airport{
-    background: linear-gradient(to bottom, #4832ff, #5031ff);
-    
+section.smart-agriculture{
+  background-image: -moz-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+
+
 }
-section.smart-government,section.smart-school,section.product{
-    background: linear-gradient(to bottom, #ef694f, #fcc25a);
+section.smart-airport{
+  background-image: linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(118,44,255) 0%, rgb(64,51,255) 100%);
+}
+
+section.smart-government{
+   background: linear-gradient( -63deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+   background-image: -moz-linear-gradient( -63deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+   background-image: -webkit-linear-gradient( -63deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+   background-image: -ms-linear-gradient( -63deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+}
+section.smart-school{
+  background-image: -moz-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -webkit-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -ms-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+}
+section.product{
+  background-image: -moz-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -webkit-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
+  background-image: -ms-linear-gradient( -50deg, rgb(237,94,78) 1%, rgb(253,202,91) 100%);
 }
 
 section.smart-energy .content{
@@ -542,12 +592,15 @@ section.smart-energy .left-image img{
 
 
 section.services{
-    background: linear-gradient(to bottom, #0e313b, #071021);
+  background-image: linear-gradient( 90deg, rgb(7,16,33) 0%, rgb(15,52,61) 100%);
+  background-image: -moz-linear-gradient( 90deg, rgb(7,16,33) 0%, rgb(15,52,61) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(7,16,33) 0%, rgb(15,52,61) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(7,16,33) 0%, rgb(15,52,61) 100%);
 }
 .title{
-    padding-top: 5px;
+    padding-top: 15px;
     display: flex;
-    justify-content: center;
+    justify-content: ;
 }
 .title h2{
     display:inline-block;
